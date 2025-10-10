@@ -2,22 +2,142 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lesson 5: Form</title>
+    <title>Lesson 5: Form and Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-<form action="">
-    <label for="username">Username:</label>
-    <input id="username" type="text" placeholder="Enter Username"><br><br>
-    <label for="password">Password:</label>
-    <input id="password" type="password" placeholder="Enter Password"><br>
-    <label>Gender</label>
-    <label><input type="radio" name="Gender" id="Gender2" value="Gender">Male</label>
-    <label><input type="radio" name="Gender" id="Gender1" value="Gender">Female<br></label>
-    <label>Hobbies</label>
-    <input type="checkbox" name="pickleball" id="pickleball" value="pickleball"Pickleball><br>
 
-    <input type="submit" value="log in">
-    <input type="reset" value="Try again">
+
+<table>
+    <tr>
+        <th>Tên</th>
+        <th>Tuổi</th>
+        <th>Địa chỉ</th>
+    </tr>
+    <tr>
+        <td>Tuấn Anh</td>
+        <td>20</td>
+        <td>Hà Nội</td>
+    </tr>
+    <tr>
+        <td>Khoai Tây</td>
+        <td>6</td>
+        <td>Hà Nội</td>
+    </tr>
+    <tr>
+        <td>Dâu Tây</td>
+        <td>1</td>
+        <td>Hà Nội</td>
+    </tr>
+    <tr>
+        <td>Tuấn Anh</td>
+        <td>20</td>
+        <td>Hà Nội</td>
+    </tr>
+    <tr>
+        <td>Khoai Tây</td>
+        <td>6</td>
+        <td>Hà Nội</td>
+    </tr>
+    <tr>
+        <td>Dâu Tây</td>
+        <td>1</td>
+        <td>Hà Nội</td>
+    </tr>
+    <tr>
+        <td>Tuấn Anh</td>
+        <td>20</td>
+        <td>Hà Nội</td>
+    </tr>
+    <tr>
+        <td>Khoai Tây</td>
+        <td>6</td>
+        <td>Hà Nội</td>
+    </tr>
+    <tr>
+        <td>Dâu Tây</td>
+        <td>1</td>
+        <td>Hà Nội</td>
+    </tr>
+</table>
+
+
+
+<form action="">
+    <label for="language">Ngôn ngữ</label>
+    <select name="language" id="language">
+        <optgroup label="Asia"></optgroup>
+        <option value="Tiếng Anh">Tiếng Anh</option>
+        <option value="Tiếng Việt" selected>Tiếng Việt</option>
+        <option value="Tây Ban Nha">Tây Ban Nha</option>
+        <option value="Nhật Bản">Nhật Bản</option>
+    </select>
+
+    <label for="username">Username</label>
+    <input id="username" type="text" value="codegym" placeholder="Nhập tài khoản"><br><br>
+    <label for="password">Password</label>
+    <input id="password" type="password" value="12345"><br><br>
+    <label>Giới tính</label>
+    <label><input type="radio" name="gender" id="gender1" checked> Nam</label>
+    <label><input type="radio" name="gender" id="gender2"> Nữ</label>
+    <br>
+    <label for="hobbies1"><input type="checkbox" name="hobbies" id="hobbies1"> Cầu Lông</label>
+    <label for="hobbies2"><input type="checkbox" name="hobbies" id="hobbies2"> Pickle ball</label>
+    <br>
+    <label for="note">Ghi chú</label>
+    <textarea name="note" id="note" cols="30" rows="10"></textarea><br>
+    <input type="submit" value="Đăng nhập">
+    <input type="reset" value="Nhập lại">
+    <input type="button" value="Bấm vào đây" onclick="banPhaoHoa()">
 </form>
+
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+<script>
+    function banPhaoHoa() {
+        const duration = 15 * 1000,
+            animationEnd = Date.now() + duration,
+            defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+        function randomInRange(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        const interval = setInterval(function() {
+            const timeLeft = animationEnd - Date.now();
+
+            if (timeLeft <= 0) {
+                return clearInterval(interval);
+            }
+
+            const particleCount = 50 * (timeLeft / duration);
+
+            // since particles fall down, start a bit higher than random
+            confetti(
+                Object.assign({}, defaults, {
+                    particleCount,
+                    origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+                })
+            );
+            confetti(
+                Object.assign({}, defaults, {
+                    particleCount,
+                    origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+                })
+            );
+        }, 250);
+    }
+</script>
 </body>
 </html>
