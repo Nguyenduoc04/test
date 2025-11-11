@@ -1,0 +1,71 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.5;
+    margin: 30px;
+}
+
+.survey-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+p {
+    margin-top: 0;
+    color: #555;
+}
+
+label {
+    font-weight: bold;
+}
+
+select, input[type="text"], input[type="number"], textarea {
+    margin-top: 4px;
+    padding: 4px;
+    font-size: 14px;
+}
+
+.small-text {
+    font-size: 12px;
+    color: #666;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th:first-child, td:first-child {
+    text-align: left;
+}
+
+.submit-btn {
+    padding: 6px 16px;
+    background-color: #f1f1f1;
+    border: 1px solid #999;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.submit-btn:hover {
+    background-color: #ddd;
+}
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
