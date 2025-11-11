@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.chessboard {
+    background-color: #ffa500; /* viền vàng cam */
+    padding: 10px;
+    display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Ô bàn cờ */
+td {
+    border: 1px solid #000;
+}
+
+/* Ô nhãn (A–H, 1–8, và ô trống góc trên) */
+.label-cell.orange {
+    background-color: #ffa500;
+    color: black;
+    border: none;
+}
+
+/* Màu xen kẽ bàn cờ – A1 là trắng */
+tr:nth-child(even) td:nth-child(odd),
+tr:nth-child(odd) td:nth-child(even) {
+    background-color: black; /* Ô đen */
+}
+
+tr:nth-child(even) td:nth-child(even),
+tr:nth-child(odd) td:nth-child(odd) {
+    background-color: white; /* Ô trắng rõ ràng */
+}
+
