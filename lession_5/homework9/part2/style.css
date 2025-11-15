@@ -1,0 +1,69 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+h2 {
+    color: blue;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: 1px solid #999;
+}
+
+/* HEADER */
+th {
+    padding: 8px;
+    color: white;
+    border: 1px solid #999;
+    font-weight: normal;
+}
+
+th.sun { background-color: #ff3300; }   /* đỏ */
+th.mon,
+th.tue,
+th.wed,
+th.thu,
+th.fri { background-color: #ffcc00; }   /* vàng */
+th.sat { background-color: #0066ff; }   /* xanh dương */
+
+th span {
+    display: block;
+    font-size: 12px;
+    color: white;
+}
+
+/* BODY */
+td {
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #999;
+    font-size: 16px;
+    position: relative;
+}
+
+/* số nhỏ ở góc dưới phải */
+td sub {
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+    font-size: 11px;
+    color: #444;
+}
+
+/* chủ nhật: chữ đỏ, nền trắng */
+td.sun {
+    color: red;
+}
+
+/* thứ bảy: chữ xanh, nền trắng */
+td.sat {
+    color: blue;
+}
