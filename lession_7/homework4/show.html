@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convert Currency</title>
+    <script src="convert.js"></script>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <td><input type="number" id="amount"></td>
+
+    <td>
+        <select id="fromCurrency">
+            <option value="VND">Việt Nam Đồng</option>
+            <option value="USD">USD</option>
+        </select>
+    </td>
+    <td>
+        <select id="toCurrency">
+            <option value="VND">Việt Nam Đồng</option>
+            <option value="USD">USD</option>
+        </select>
+    </td>
+    </tr>
+</table>
+<input type="button" onclick="convertCurrency()" value="Convert">
+    <div id="result"></div>
+</body>
+</html>
