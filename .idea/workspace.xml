@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16cb23cb-6fbf-4d6a-81ac-c7fe22cb0123" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lession_6/homework1/file.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lession_6/homework1/showMessage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lession_6/homework2/file.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lession_6/homework2/showMessage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lession_15/homework2/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/lession_15/homework2/script.js" afterDir="false" />
     </list>
@@ -20,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -64,6 +63,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CodeGym\lession_6\study" />
       <recent name="D:\CodeGym\lession_15\homework1" />
     </key>
   </component>
@@ -97,7 +97,7 @@
       <workItem from="1762954284117" duration="3852000" />
       <workItem from="1762998298079" duration="155000" />
       <workItem from="1763242901219" duration="140000" />
-      <workItem from="1763243377433" duration="478000" />
+      <workItem from="1763243377433" duration="707000" />
     </task>
     <servers />
   </component>
