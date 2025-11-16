@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16cb23cb-6fbf-4d6a-81ac-c7fe22cb0123" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lession_8/homework5/exercise1/checkSum.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lession_8/homework5/exercise2/checkEmployee.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lession_9/homework1/ball.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lession_9/homework1/move.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lession_15/homework2" beforeDir="false" afterPath="$PROJECT_DIR$/lession_15/homework2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lession_15/homework2/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/lession_15/homework2/script.js" afterDir="false" />
@@ -21,8 +21,8 @@
       <list>
         <option value="CSS File" />
         <option value="tsconfig.json" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -102,7 +102,7 @@
       <workItem from="1762954284117" duration="3852000" />
       <workItem from="1762998298079" duration="155000" />
       <workItem from="1763242901219" duration="140000" />
-      <workItem from="1763243377433" duration="11660000" />
+      <workItem from="1763243377433" duration="12032000" />
     </task>
     <servers />
   </component>
