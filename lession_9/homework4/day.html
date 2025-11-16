@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Days</title>
+</head>
+<body>
+    <input type="text" id="myMonth" />
+    <input type="button" value="Tính số ngày" onclick="showDays();" /><br>
+    <p id="result"></p>
+    <script>
+        function showDays() {
+            let month = document.getElementById("myMonth").value;
+            let message = "Tháng " + month + " có ";
+                switch (month) {
+                    case "1": case "3": case "5": case "7": case "8": case "10": case "12":
+                        message += "31 ngày"
+                        break;
+                    case "4": case "6": case "9": case "11":
+                        message += "30 ngày"
+                        break;
+                    case "2":
+                        message += "28 hoặc 29 ngày"
+                        break;
+                    default:
+                        message = "Hãy nhập tháng từ 1 đến 12"
+                        break;
+                }
+                document.getElementById("result").innerHTML = message;
+        }
+    </script>
+</body>
+</html>
