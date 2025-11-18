@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bài 1 - Kiểm tra chia hết</title>
+    <style>body{font-family:Arial;padding:16px;max-width:640px;margin:auto}label{display:block;margin-top:8px}</style>
+</head>
+<body>
+<h1>Bài 1: Kiểm tra a có chia hết cho b không?</h1>
+<label>a: <input id="a" type="number"></label>
+<label>b: <input id="b" type="number"></label><br>
+<button onclick="checkDiv()">Kiểm tra</button>
+<p id="out"></p>
+
+
+<script>
+    function checkDiv(){
+        const a = Number(document.getElementById('a').value);
+        const b = Number(document.getElementById('b').value);
+        const out = document.getElementById('out');
+        if (Number.isNaN(a) || Number.isNaN(b) || b === 0) {
+            out.textContent = 'Vui lòng nhập số hợp lệ (b khác 0).';
+            return;
+        }
+        out.textContent = (a % b === 0) ? `${a} chia hết cho ${b}.` : `${a} không chia hết cho ${b}.`;
+    }
+</script>
+</body>
+</html>
