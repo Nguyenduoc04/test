@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tính hoa hồng</title>
+    <style>body{font-family:Arial;padding:16px;max-width:640px;margin:auto}label{display:block;margin-top:8px}</style>
+</head>
+<body>
+<h1>Tính hoa hồng theo doanh số</h1>
+<p>Ví dụ luật tính: <br>Doanh số &lt;= 10 (triệu) -> tip = 3% <br> Doanh số &gt;10 (triệu) và &lt;=50 (triệu) -> 5% <br> Doanh số &gt;50 (triệu) -> 8%.</p>
+<label>Doanh số (số): <input id="sales" type="number" step="0.01" min="0"></label>
+<br><button onclick="comm()">Tính hoa hồng</button>
+<p id="out"></p>
+
+
+<script>
+    function comm(){
+        const s = Number(document.getElementById('sales').value);
+        const out = document.getElementById('out');
+        if (!Number.isFinite(s) || s < 0) { out.textContent='Nhập doanh số hợp lệ.'; return; }
+        let rate = 0;
+        if (s <= 10) rate = 0.03;
+        else if (s <= 50) rate = 0.05;
+        else rate = 0.08;
+        const hoaHong = s * rate;
+        out.innerHTML = `Doanh số: ${s} — Tỷ lệ: ${(rate*100).toFixed(1)}% — Hoa hồng: ${hoaHong.toFixed(2)}`;
+    }
+</script>
+</body>
+</html>

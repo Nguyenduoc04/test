@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tính cước điện thoại</title>
+    <style>body{font-family:Arial;padding:16px;max-width:720px;margin:auto}label{display:block;margin-top:8px}</style>
+</head>
+<body>
+<h1>Tính cước điện thoại cho hộ gia đình</h1>
+<p>Quy tắc tính: <br> • 0-50 phút: 2000 đ/phút <br> • 51-100 phút: 1500 đ/phút <br> • trên 100 phút: 1000 đ/phút.
+</p>
+<label>Tổng phút gọi trong tháng: <input id="mins" type="number" min="0" step="1"></label><br>
+<button onclick="fee()">Tính cước</button>
+<p id="out"></p>
+
+
+<script>
+    function fee(){
+        let m = Number(document.getElementById('mins').value);
+        const out = document.getElementById('out');
+        if (!Number.isFinite(m) || m < 0) { out.textContent='Nhập số phút hợp lệ.'; return; }
+        let cost = 0;
+        if (m <= 50) {
+            cost = m * 2000;
+        } else if (m <= 100) {
+            cost = 50 * 2000 + (m - 50) * 1500;
+        } else {
+            cost = 50 * 2000 + 50 * 1500 + (m - 100) * 1000;
+        }
+        out.innerHTML = `Tổng ${m} phút — Tổng cước: ${cost.toLocaleString('vi-VN')} đ`;
+    }
+</script>
+</body>
+</html>

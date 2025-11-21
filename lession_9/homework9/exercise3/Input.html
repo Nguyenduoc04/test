@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>So sánh với 0</title>
+    <style>body{font-family:Arial;padding:16px;max-width:640px;margin:auto}label{display:block;margin-top:8px}</style>
+</head>
+<body>
+<h1>Nhập số nguyên, xác định > 0, < 0 hay = 0</h1>
+<label>Số nguyên: <input id="n" type="number" step="1"></label>
+<br><button onclick="checkZero()">Kiểm tra</button>
+<p id="out"></p>
+
+
+<script>
+    function checkZero(){
+        const n = Number(document.getElementById('n').value);
+        const out = document.getElementById('out');
+        if (!Number.isFinite(n)) { out.textContent = 'Nhập số hợp lệ.'; return; }
+        if (n > 0) out.textContent = `${n} lớn hơn 0.`;
+        else if (n < 0) out.textContent = `${n} nhỏ hơn 0.`;
+        else out.textContent = `${n} bằng 0.`;
+    }
+</script>
+</body>
+</html>

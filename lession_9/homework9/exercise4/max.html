@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tìm giá trị lớn nhất trong 3 số</title>
+    <style>body{font-family:Arial;padding:16px;max-width:640px;margin:auto}label{display:block;margin-top:8px}</style>
+</head>
+<body>
+<h1>Tìm lớn nhất trong 3 số nguyên</h1>
+<label>a: <input id="a" type="number" step="1"></label>
+<label>b: <input id="b" type="number" step="1"></label>
+<label>c: <input id="c" type="number" step="1"></label>
+<br><button onclick="max3()">Tìm</button>
+<p id="out"></p>
+
+
+<script>
+    function max3(){
+        const a = Number(document.getElementById('a').value);
+        const b = Number(document.getElementById('b').value);
+        const c = Number(document.getElementById('c').value);
+        const out = document.getElementById('out');
+        if (![a,b,c].every(Number.isFinite)) { out.textContent = 'Nhập đủ 3 số hợp lệ.'; return; }
+        const m = Math.max(a,b,c);
+        out.textContent = `Giá trị lớn nhất là ${m}.`;
+    }
+</script>
+</body>
+</html>

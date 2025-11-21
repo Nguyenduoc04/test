@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Kiểm tra đủ tuổi vào lớp 10</title>
+    <style>body{font-family:Arial;padding:16px;max-width:640px;margin:auto}label{display:block;margin-top:8px}</style>
 </head>
 <body>
+<h1>Kiểm tra đủ điều kiện vào lớp 10</h1>
+<label>Tuổi: <input id="age" type="number" min="0"></label><br>
+<button onclick="checkAge()">Kiểm tra</button>
+<p id="out"></p>
 
+
+<script>
+    function checkAge(){
+        const age = Number(document.getElementById('age').value);
+        const out = document.getElementById('out');
+        if (!Number.isFinite(age) || age < 0) { out.textContent = 'Nhập tuổi hợp lệ.'; return; }
+        const required = 15;
+        out.textContent = (age >= required) ? "Đủ điều kiện vào lớp 10." : `Không đủ điều kiện. Cần ít nhất ${required} tuổi.`;
+    }
+</script>
 </body>
 </html>
