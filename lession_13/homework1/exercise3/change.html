@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upper Case to Lower Case and reverse</title>
+</head>
+<body>
+    <script>
+        let str = prompt("Nhập chuỗi:");
+        let result = "";
+
+        for (let i = 0; i < str.length; i++) {
+            if (str[i] === str[i].toUpperCase()) {
+                result += str[i].toLowerCase();
+            } else {
+                result += str[i].toUpperCase();
+            }
+        }
+
+        document.write(result);
+    </script>
+</body>
+</html>
