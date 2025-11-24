@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let num = prompt("Nhập chuỗi số:");
+        let result = num[0];
+
+        for (let i = 1; i < num.length; i++) {
+            if (num[i] % 2 === 0 && num[i - 1] % 2 === 0) {
+                result += "-" + num[i];
+            } else {
+                result += num[i];
+            }
+        }
+        document.write(result);
+    </script>
+</body>
+</html>
