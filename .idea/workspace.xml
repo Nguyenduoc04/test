@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4a01f5d7-d084-4044-ba49-3d03157acc6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lession_12/homework3/exercise1/findNum.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lession_12/homework4/exercise1/Max.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lession_15/homework2" beforeDir="false" afterPath="$PROJECT_DIR$/lession_15/homework2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lession_15/homework2/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/lession_15/homework2/script.js" afterDir="false" />
@@ -27,6 +29,9 @@
   "associatedIndex": 2
 }]]></component>
   <component name="ProjectId" id="35valOwnt6BrRta1hedw2egrkWj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,9 +41,14 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "D:/CodeGym",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
@@ -58,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1763993149318</updated>
-      <workItem from="1763993150744" duration="131000" />
+      <workItem from="1763993150744" duration="310000" />
     </task>
     <servers />
   </component>
