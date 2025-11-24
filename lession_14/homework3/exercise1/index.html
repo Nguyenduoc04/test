@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Min In Matrix</title>
+</head>
+<body>
+<script>
+    function minArrayIndex(arr) {
+        if(arr.length === 0) return -1; // mảng rỗng
+
+        let minIndex = 0; // giả sử min là phần tử đầu tiên
+        for(let i = 1; i < arr.length; i++) {
+            if(arr[i] < arr[minIndex]) {
+                minIndex = i;
+            }
+        }
+        return minIndex; // trả về vị trí, không phải giá trị
+    }
+    let arr1 = [3, 5, 1, 8, -3, 7, 8];
+    let arr2 = [7, 12, 6, 9, 20, 56, 89];
+    let arr3 = [];
+    let arr4 = [0, 0, 0, 0, 0, 0];
+
+    document.write("arr1:", minArrayIndex(arr1) + '<br/>'); // 4 (phần tử -3)
+    document.write("arr2:", minArrayIndex(arr2) + '<br/>'); // 2 (phần tử 6)
+    document.write("arr3:", minArrayIndex(arr3) + '<br/>'); // -1 (mảng rỗng)
+    document.write("arr4:", minArrayIndex(arr4) + '<br/>'); // 0 (phần tử 0 đầu tiên)
+
+</script>
+</body>
+</html>
