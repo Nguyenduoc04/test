@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a01f5d7-d084-4044-ba49-3d03157acc6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lession_13/homework3/exercise1/caro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lession_13/homeword2/exercise1/Dictionary.html" beforeDir="false" afterPath="$PROJECT_DIR$/lession_13/homework2/exercise1/Dictionary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lession_14/homework1/exercise1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CodeGym.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lession_15/homework2" beforeDir="false" afterPath="$PROJECT_DIR$/lession_15/homework2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lession_15/homework2/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/lession_15/homework2/script.js" afterDir="false" />
     </list>
@@ -52,6 +54,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -70,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1763993149318</updated>
-      <workItem from="1763993150744" duration="5228000" />
+      <workItem from="1763993150744" duration="5389000" />
     </task>
     <servers />
   </component>
