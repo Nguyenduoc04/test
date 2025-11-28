@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+    <script>
+        function bai1() {
+            let n = parseInt(prompt("Nhập số phần tử mảng (n <= 20):"));
+            if (isNaN(n) || n <= 0 || n > 20) {
+                alert("Số lượng phần tử không hợp lệ!");
+                return;
+            }
+
+            let arr = [];
+            for (let i = 0; i < n; i++) {
+                let num = parseInt(prompt(`Nhập phần tử thứ ${i + 1}:`));
+                arr.push(num);
+            }
+
+            document.write("Mảng vừa nhập: [" + arr.join(", ") + "]<br>");
+
+            let sumEven = 0, sumOdd = 0;
+            for (let num of arr) {
+                if (num % 2 === 0) sumEven += num;
+                else sumOdd += num;
+            }
+
+            let result = sumEven - sumOdd;
+            document.write(`Kết quả (Tổng số chẵn - Tổng số lẻ) = ${result}`);
+        }
+
+        bai1();
+    </script>
+</body>
+</html>

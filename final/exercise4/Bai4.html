@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<h2>Bài 4: Quản lý danh sách điện thoại</h2>
+    <script>
+        class DienThoai {
+            constructor(ma, ten, hang, gia) {
+                this.ma = ma;
+                this.ten = ten;
+                this.hang = hang;
+                this.gia = gia;
+            }
+            getMa() { return this.ma; }
+            getTen() { return this.ten; }
+            getHang() { return this.hang; }
+            getGia() { return this.gia; }
+            setMa(ma) { this.ma = ma; }
+            setTen(ten) { this.ten = ten; }
+            setHang(hang) { this.hang = hang; }
+            setGia(gia) { this.gia = gia; }
+            toString() { return `Mã: ${this.ma}, Tên: ${this.ten}, Hãng: ${this.hang}, Giá: ${this.gia}`; }
+        }
+
+        // Danh sách mẫu
+        let danhSachDT = [
+            new DienThoai("DT01", "iPhone 15", "Apple", 3500),
+            new DienThoai("DT02", "Galaxy S23", "Samsung", 3000),
+            new DienThoai("DT03", "Xperia 1", "Sony", 2500)
+        ];
+
+        function hienThiDanhSach() {
+            let sortedList = [...danhSachDT].sort((a, b) => a.getTen().localeCompare(b.getTen()));
+            document.write("<h3>Danh sách điện thoại:</h3>");
+            document.write("<ul>");
+            for (let dt of sortedList) {
+                document.write("<li>" + dt.toString() + "</li>");
+            }
+            document.write("</ul>");
+        }
+
+        function themDienThoai() {
+            let ma = prompt("Nhập mã điện thoại:");
+            let ten = prompt("Nhập tên điện thoại:");
+            let hang = prompt("Nhập hãng sản xuất:");
+            let gia = parseFloat(prompt("Nhập giá:"));
+
+            let dt = new DienThoai(ma, ten, hang, gia);
+            danhSachDT.push(dt);
+            hienThiDanhSach();
+        }
+
+        hienThiDanhSach();
+        if(confirm("Bạn có muốn thêm điện thoại mới không?")) {
+            themDienThoai();
+        }
+    </script>
+</body>
+</html>

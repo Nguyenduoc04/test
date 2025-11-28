@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<h2>Bài 3: Tìm số nguyên tố</h2>
+    <script>
+        function isPrime(n) {
+            if (n <= 1) return false;
+            for (let i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i === 0) return false;
+            }
+            return true;
+        }
+
+        function findPrimes(arr) {
+            let primes = arr.filter(num => isPrime(num));
+            primes.sort((a, b) => a - b);
+            return primes;
+        }
+
+        let n = parseInt(prompt("Nhập số lượng phần tử mảng:"));
+        let arr = [];
+        for (let i = 0; i < n; i++) {
+            let num = parseInt(prompt(`Nhập phần tử thứ ${i + 1}:`));
+            arr.push(num);
+        }
+
+        document.write("Mảng vừa nhập: [" + arr.join(", ") + "]<br>");
+        let primes = findPrimes(arr);
+        document.write("Các số nguyên tố (tăng dần): [" + primes.join(", ") + "]");
+    </script>
+</body>
+</html>

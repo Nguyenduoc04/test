@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<h2>Bài 2: Đếm ký tự in hoa</h2>
+    <script>
+        function countUpper(str) {
+            let count = 0;
+            for (let char of str) {
+                if (char >= 'A' && char <= 'Z') count++;
+            }
+            if (count === 0) return "The String is not contain upper char";
+            return count;
+        }
+
+        let input = prompt("Nhập một chuỗi:");
+        let result = countUpper(input);
+        document.write("Kết quả: " + result);
+    </script>
+</body>
+</html>

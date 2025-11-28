@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a01f5d7-d084-4044-ba49-3d03157acc6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lession_14/homework3/exercise1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final/exercise1/Bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final/exercise2/Bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final/exercise3/Bai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final/exercise4/Bai4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lession_15/homework2" beforeDir="false" afterPath="$PROJECT_DIR$/lession_15/homework2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lession_15/homework2/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/lession_15/homework2/script.js" afterDir="false" />
@@ -71,6 +74,8 @@
       <option name="presentableId" value="Default" />
       <updated>1763993149318</updated>
       <workItem from="1763993150744" duration="5910000" />
+      <workItem from="1764082472393" duration="806000" />
+      <workItem from="1764337600806" duration="593000" />
     </task>
     <servers />
   </component>
